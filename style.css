@@ -1,0 +1,117 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header{
+    margin: 0 auto;
+    max-width: 95%;
+    background: linear-gradient(50deg, red, green, blue, orange, pink, aqua, skyblue, purple, transparent);
+    color: white;
+    font-weight: bolder;
+    text-shadow: 5px 5px 5px black;
+}
+
+nav ul{
+    width: 100%;
+    /* background-color: green; */
+    display: flex;
+    justify-content: flex-end;
+}
+
+nav ul li{
+
+    list-style: none;
+    margin: 5px;
+    padding: 5px;
+}
+
+nav ul li a{
+
+    padding: 0 5px;
+    color: white;
+    text-transform: capitalize;
+    text-decoration: none;
+}
+
+main{
+    min-height: 100vh;
+
+}
+
+main .container{
+    margin: 0 auto;
+    max-width: 95%;
+    /* background-color: orange; */
+    height: 300px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.container div{
+    width: 200px;
+    height: 300px;
+    /* background-color: blueviolet; */
+    border: 2px solid black;
+    padding: 3px;
+}
+
+.img{
+    width: 150px;
+    height: 140px;
+}
+
+button{
+    float: right;
+    margin-right: 40px;
+    width: 70px;
+    height: 30px;
+    
+}
+
+.dbutton{
+    float: right;
+    margin-right: 120px;
+    width: 70px;
+    height: 30px;
+    margin-top: 70px;
+    position: sticky;
+}
+
+.dbutton a{
+    text-decoration: none;
+}
+
+.p{
+    padding: 3px;
+    line-height: 5px;
+}
+
+@media (max-width: 500px) {
+    body{
+        overflow-x: hidden;
+    }
+    main{
+        display: flex;
+        flex-direction: row;
+    }
+    main .container{
+        margin: 0 auto;
+        max-width: 95%;
+        /* background-color: orange; */
+        height: 300px;
+        display: flex;
+        justify-content: space-between;
+        flex-direction: column;
+    }
+
+    .container div{
+        width: 200px;
+        height: 300px;
+        /* background-color: blueviolet; */
+        border: 2px solid black;
+        padding: 3px;
+        margin: 10px 0;
+    } 
+}
